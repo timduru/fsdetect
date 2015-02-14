@@ -1,0 +1,3 @@
+GCC=/home/timduru/android/katkiss/current/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8/bin/arm-linux-androideabi-gcc 
+SYSROOT=/home/timduru/android/katkiss/kk-4.4/prebuilts/ndk/9/platforms/android-14/arch-arm/
+$GCC --sysroot=$SYSROOT -I$SYSROOT/usr/include/ -static -s -Wall -std=c99 fsdetect.c -o fsdetect
